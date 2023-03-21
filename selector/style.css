@@ -1,0 +1,65 @@
+a1 * [lang^=en] {
+    color: green;
+}
+
+*.warning {
+    color: red;
+}
+
+*#maincontent {
+    border: 1px solid blue;
+}
+
+.floating {
+    float: left
+}
+
+.floating+* {
+    clear: left;
+}
+
+#identified {
+    background-color: skyblue;
+}
+
+#a2 .red {
+    color: #f33;
+}
+
+.yellow-bg {
+    background: #ffa;
+}
+
+.fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px #77f;
+}
+
+#a3 p {
+    text-align: center;
+    color: red;
+}
+
+#a4 li {
+    list-style-type: disc;
+}
+
+li li {
+    list-style-type: circle;
+}
+
+#a5 span {
+    background-color: aqua;
+}
+
+div>span {
+    background-color: yellow;
+}
+
+#a6 p~span {
+    color: red;
+}
+
+#a7 li:first-of-type+li {
+    color: red;
+}

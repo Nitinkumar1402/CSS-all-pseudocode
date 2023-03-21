@@ -1,0 +1,33 @@
+ li [class] {
+     font-size: 200%;
+ }
+ 
+ li[class="a"] {
+     background-color: rgb(72, 255, 0);
+ }
+ 
+ li[class~="a"] {
+     color: rgb(255, 0, 255);
+ }
+ 
+ #atr,
+ li[class^="a"] {
+     font-size: 200%;
+ }
+ 
+ li[class$="a"] {
+     background-color: yellow;
+ }
+ 
+ li[class*="a"] {
+     color: red;
+ }
+ 
+ #attr,
+ li[class^="a"] {
+     background-color: yellow;
+ }
+ 
+ li[class^="a" i] {
+     color: red;
+ }

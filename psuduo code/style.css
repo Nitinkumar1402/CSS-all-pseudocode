@@ -1,0 +1,203 @@
+#a1 :active {
+    color: red;
+}
+
+#a2 ul li {
+    color: blue;
+}
+
+#a2 ul li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+#a3 p:first-of-type {
+    color: red;
+    font-style: italic;
+}
+
+#a4 .red-input:focus {
+    background: yellow;
+    color: red;
+}
+
+.blue-input:focus {
+    background: yellow;
+    color: blue;
+}
+
+#a5 a {
+    background-color: powderblue;
+    transition: background-color .5s;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+#a6 ul li {
+    color: blue;
+}
+
+ul li:last-child {
+    border: 1px solid red;
+    color: red;
+}
+
+#a7 p:last-of-type {
+    color: red;
+    font-style: italic;
+}
+
+#a8 a:link {
+    background-color: gold;
+    color: green;
+}
+
+#a9 .fancy {
+    text-shadow: 2px 2px 3px gold;
+}
+
+p:not(.fancy) {
+    color: green;
+}
+
+body :not(p) {
+    text-decoration: underline;
+}
+
+body :not(div):not(span) {
+    font-weight: bold;
+}
+
+body :not(div, .fancy) {
+    text-decoration: overline underline;
+}
+
+h2 :not(span.foo) {
+    color: red;
+}
+
+#z1 html {
+    font-family: sans-serif;
+}
+
+span,
+div em {
+    padding: 5px;
+    border: 1px solid green;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.first span:nth-child(2n+1),
+.second span:nth-child(2n+1),
+.third span:nth-of-type(2n+1) {
+    background-color: lime;
+}
+
+#z2 table {
+    border: 1px solid blue;
+}
+
+tr:nth-last-child(-n+3) {
+    background-color: pink;
+}
+
+tr:nth-last-child(n+2) {
+    color: blue;
+}
+
+tr:nth-last-child(2) {
+    font-weight: 600;
+}
+
+#z3 span:nth-last-of-type(2) {
+    background-color: rgb(255, 136, 0);
+}
+
+#z4 p:nth-of-type(2n+1) {
+    color: red;
+}
+
+p:nth-of-type(2n) {
+    color: blue;
+}
+
+p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+p.fancy:nth-of-type(2n+1) {
+    text-decoration: underline;
+}
+
+#z5 main :only-of-type {
+    color: red;
+}
+
+#z6 div:only-child {
+    color: red;
+}
+
+div {
+    display: inline-block;
+    margin: 6px;
+    outline: 1px solid;
+}
+
+#z7 a {
+    background-color: white;
+    border: 1px solid white;
+}
+
+a:visited {
+    background-color: yellow;
+    border-color: hotpink;
+    color: hotpink;
+}
+
+#z8 .exciting-text::after {
+    content: " <- EXCITING!";
+    color: green;
+}
+
+.boring-text::after {
+    content: " <- BORING";
+    color: red;
+}
+
+#z9 q::before {
+    content: "«";
+    color: blue;
+}
+
+q::after {
+    content: "»";
+    color: red;
+}
+
+#s1 p {
+    width: 500px;
+    line-height: 1.5;
+}
+
+h2+p::first-letter {
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 red;
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+}
+
+#s2 ::first-line {
+    color: blue;
+    text-transform: uppercase;
+    /* WARNING: DO NOT USE THESE */
+    /* Many properties are invalid in ::first-line pseudo-elements */
+    margin-left: 20px;
+    text-indent: 20px;
+}
